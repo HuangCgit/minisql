@@ -3,5 +3,25 @@
     // 悬停以查看现有属性的描述。
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [
+        {
+            "name": "Debug B+ Tree Test",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/minisql-master/build/test/b_plus_tree_test",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/minisql-master",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
 }

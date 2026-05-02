@@ -75,7 +75,7 @@ page_id_t InternalPage::Lookup(const GenericKey *key, const KeyManager &KM) {
   int right = GetSize();
   while (left < right) {
     int mid = (left + right) / 2;
-    if (KM.CompareKeys(KeyAt(mid), key) < 0) {
+    if (KM.CompareKeys(KeyAt(mid), key) <= 0) {
       left = mid + 1;
     } else {
       right = mid;
