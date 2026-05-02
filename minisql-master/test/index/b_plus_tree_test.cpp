@@ -1,6 +1,6 @@
-#include "index/b_plus_tree.h"
 
 #include "common/instance.h"
+#include "index/b_plus_tree.h"
 #include "gtest/gtest.h"
 #include "index/comparator.h"
 #include "utils/tree_file_mgr.h"
